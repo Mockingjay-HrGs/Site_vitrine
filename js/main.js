@@ -93,9 +93,6 @@
         });
     })();
 
-
-
-
     // init + écouteur
     updateAll();
     select.addEventListener('change', updateAll);
