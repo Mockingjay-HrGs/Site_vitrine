@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recettes — Accueil</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<!-- Lien d’évitement -->
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header">
+    <button class="icon-btn" aria-label="Menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <!-- Recherche -->
+    <form class="search" role="search" aria-label="Recherche">
+        <span class="search__icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </span>
+      <input class="search__input" type="search" placeholder="Rechercher une recette…" aria-label="Search">
+      <button class="search__action" type="submit" aria-label="Lancer la recherche">↵</button>
+    </form>
+
+    <a class="icon-btn" href="services-contact.html" aria-label="Compte">
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M5.5 21a8.5 8.5 0 0 1 13 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Onglets -->
+  <nav class="tabs" aria-label="Navigation des catégories">
+    <div class="container tabs__row">
+      <a class="tab tab--active" href="#">Par catégorie</a>
+      <a class="tab" href="#">Par thématique</a>
+      <a class="tab" href="#">Par régime</a>
+      <a class="tab" href="#">Par fête</a>
+      <a class="tab" href="#">Cuisine du Monde</a>
+    </div>
+  </nav>
+</header>
+
+<!-- MAIN -->
+<main id="contenu" class="container main">
+  <!-- Hero court -->
+  <section class="hero" aria-label="Intro">
+    <div class="hero__content">
+      <h1 class="hero__title">Des recettes simples & gourmandes</h1>
+      <p class="hero__text">Pâtes, salades, et cuisine du monde pour tous les jours.</p>
+    </div>
+  </section>
+
+  <!-- Pâtes -->
+  <section class="section">
+    <div class="section__head">
+      <h2 class="section__title">Recette de Pâte</h2>
+      <a class="link" href="#">Tout voir →</a>
+    </div>
+
+    <ul class="grid">
+      <li>
+        <a class="card" href="recette.html">
+          <figure class="card__media">
+            <img loading="lazy" src="img/pâtes_carbonara.webp" alt="Pâtes à la carbonara">
+            <figcaption class="card__overlay">
+              <span class="badge">30 min</span>
+              <span class="badge">Facile</span>
+            </figcaption>
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title">Pâtes à la carbonara</h3>
+            <p class="card__desc">La version italienne, simple.</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="card" href="#">
+          <figure class="card__media">
+            <img loading="lazy" src="img/pâtes_alfredo.jpeg" alt="Pâtes Alfredo crémeuses">
+            <figcaption class="card__overlay">
+              <span class="badge">25 min</span>
+              <span class="badge">Facile</span>
+            </figcaption>
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title">Pâtes Alfredo</h3>
+            <p class="card__desc">Crémeuses et réconfortantes.</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="card" href="#">
+          <figure class="card__media">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?q=80&w=1200&auto=format&fit=crop" alt="Spaghetti au pesto">
+            <figcaption class="card__overlay">
+              <span class="badge">20 min</span>
+              <span class="badge">Végétarien</span>
+            </figcaption>
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title">Spaghetti pesto</h3>
+            <p class="card__desc">Basilic frais & parmesan.</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="card" href="#">
+          <figure class="card__media">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=1200&auto=format&fit=crop" alt="Pâtes au thon aux tomates">
+            <figcaption class="card__overlay">
+              <span class="badge">15 min</span>
+              <span class="badge">Express</span>
+            </figcaption>
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title">Pâtes au thon</h3>
+            <p class="card__desc">Tomates, olives, thon.</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Salades -->
+  <section class="section">
+    <div class="section__head">
+      <h2 class="section__title">Recette de Salade</h2>
+      <a class="link" href="#">Tout voir →</a>
+    </div>
+
+    <ul class="grid">
+      <li>
+        <a class="card" href="#">
+          <figure class="card__media">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1200&auto=format&fit=crop" alt="Salade César">
+            <figcaption class="card__overlay">
+              <span class="badge">15 min</span>
+              <span class="badge">Facile</span>
+            </figcaption>
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title">Salade César</h3>
+            <p class="card__desc">Poulet, croûtons, parmesan.</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="card" href="#">
+          <figure class="card__media">
+            <img loading="lazy" src="img/salade_composé.jpg" alt="Salade composée colorée">
+            <figcaption class="card__overlay">
+              <span class="badge">10 min</span>
+              <span class="badge">Express</span>
+            </figcaption>
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title">Salade composée</h3>
+            <p class="card__desc">Croquante et rapide.</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="card" href="#">
+          <figure class="card__media">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1200&auto=format&fit=crop" alt="Salade méditerranéenne">
+            <figcaption class="card__overlay">
+              <span class="badge">20 min</span>
+              <span class="badge">Végétarien</span>
+            </figcaption>
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title">Salade méditerranéenne</h3>
+            <p class="card__desc">Feta, concombre, olives.</p>
+          </div>
+        </a>
+      </li>
+
+      <li>
+        <a class="card" href="#">
+          <figure class="card__media">
+            <img loading="lazy" src="img/salade_quinoa.jpg" alt="Salade de quinoa">
+            <figcaption class="card__overlay">
+              <span class="badge">25 min</span>
+              <span class="badge">Healthy</span>
+            </figcaption>
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title">Salade de quinoa</h3>
+            <p class="card__desc">Riche en protéines.</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">© 2025 Recettes • <a class="link" href="#">Mentions légales</a></div>
+</footer>
+</body>
+</html>

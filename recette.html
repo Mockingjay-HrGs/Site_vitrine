@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<script src="js/main.js" defer></script>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pâtes à la carbonara – Recette</title>
+
+  <!-- Fonts + CSS -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<!-- HEADER identique à la home -->
+<header class="site-header">
+  <div class="container header">
+    <a class="icon-btn" href="index.html" aria-label="Retour">
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+
+    <form class="search" role="search" aria-label="Recherche">
+        <span class="search__icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </span>
+      <input class="search__input" type="search" placeholder="Rechercher une recette…" aria-label="Search">
+      <button class="search__action" type="submit" aria-label="Lancer la recherche">↵</button>
+    </form>
+
+    <a class="icon-btn" href="#" aria-label="Compte">
+      <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2" fill="none"/>
+        <path d="M5.5 21a8.5 8.5 0 0 1 13 0" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
+    </a>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main id="contenu" class="container recipe">
+  <!-- Titre + meta -->
+  <header class="recipe__head">
+    <h1 class="recipe__title">Pâtes à la carbonara</h1>
+    <p class="recipe__subtitle">La vraie recette italienne, onctueuse et rapide.</p>
+
+    <div class="recipe__meta">
+      <span class="badge">⭐ 4.8</span>
+      <span class="badge">30 min</span>
+      <span class="badge">Facile</span>
+      <span class="badge">4 pers.</span>
+    </div>
+  </header>
+
+  <!-- Media principal -->
+  <figure class="recipe__media">
+    <img src="img/pâtes_carbonara.webp"
+         alt="Assiette de pâtes carbonara avec pancetta croustillante">
+    <figcaption class="sr-only">Pâtes à la carbonara servies avec pancetta</figcaption>
+  </figure>
+
+  <!-- Grille contenu -->
+  <section class="recipe__grid">
+    <!-- Colonne Ingrédients -->
+    <aside class="ingredients" aria-labelledby="ingredients-title">
+      <div class="panel">
+        <div class="panel__head">
+          <h2 id="ingredients-title" class="panel__title">Ingrédients</h2>
+
+          <!-- Sélecteur portions -->
+          <label class="servings">
+            <span>Pour</span>
+            <select id="servings-select" aria-label="Nombre de personnes">
+              <option>2 pers.</option>
+              <option selected>4 pers.</option>
+              <option>6 pers.</option>
+              <option>8 pers.</option>
+            </select>
+          </label>
+        </div>
+
+        <ul id="ingredients" class="checklist" data-base-servings="4">
+          <li data-base="400" data-unit="g">
+            <label>
+              <input type="checkbox">
+              <span class="q"><strong class="qty">400</strong><span class="unit"> g</span> de pâtes (spaghetti ou tagliatelles)</span>
+            </label>
+          </li>
+
+          <li data-base="150" data-unit="g">
+            <label>
+              <input type="checkbox">
+              <span class="q"><strong class="qty">150</strong><span class="unit"> g</span> de pancetta</span>
+            </label>
+          </li>
+
+          <li data-base="2" data-unit="œuf">
+            <label>
+              <input type="checkbox">
+              <span class="q"><strong class="qty">2</strong><span class="unit"> œufs</span> entiers</span>
+            </label>
+          </li>
+
+          <li data-base="2" data-unit="jaune">
+            <label>
+              <input type="checkbox">
+              <span class="q"><strong class="qty">2</strong><span class="unit"> jaunes d’œuf</span></span>
+            </label>
+          </li>
+
+          <li data-base="60" data-unit="g">
+            <label>
+              <input type="checkbox">
+              <span class="q"><strong class="qty">60</strong><span class="unit"> g</span> de pecorino (ou parmesan)</span>
+            </label>
+          </li>
+
+          <li data-base="1" data-unit="pincée">
+            <label>
+              <input type="checkbox">
+              <span class="q"><strong class="qty">1</strong><span class="unit"> pincée</span> de sel</span>
+            </label>
+          </li>
+
+          <li data-base="3" data-unit="tour">
+            <label>
+              <input type="checkbox">
+              <span class="q"><strong class="qty">3</strong><span class="unit"> tours</span> de poivre</span>
+            </label>
+          </li>
+        </ul>
+
+
+
+        <!-- petit announcer pour lecteurs d'écran -->
+        <p id="servings-announcer" class="sr-only" aria-live="polite"></p>
+
+
+        <div class="panel__actions">
+          <a class="btn btn--primary" href="#">Sauvegarder</a>
+          <a class="btn" href="#">Partager</a>
+        </div>
+      </div>
+
+      <!-- Suggestion latérale -->
+      <div class="panel panel--suggest">
+        <h3 class="panel__subtitle">Astuce</h3>
+        <p>Retirez la casserole du feu avant d’ajouter les œufs pour éviter l’omelette.</p>
+      </div>
+    </aside>
+
+    <!-- Colonne Étapes -->
+    <article class="steps" aria-labelledby="steps-title">
+      <h2 id="steps-title" class="panel__title">Étapes de la recette</h2>
+
+      <ol class="steps__list">
+        <li>
+          <h4>Cuire les pâtes</h4>
+          <p>Dans une grande casserole d’eau bouillante salée, cuisez les pâtes <em>al dente</em>.</p>
+        </li>
+        <li>
+          <h4>Dorer la pancetta</h4>
+          <p>Dans une poêle, faites revenir la pancetta jusqu’à ce qu’elle soit croustillante.</p>
+        </li>
+        <li>
+          <h4>Préparer la sauce</h4>
+          <p>Dans un bol, fouettez œufs, jaunes et fromage râpé. Poivrez généreusement.</p>
+        </li>
+        <li>
+          <h4>Lier hors du feu</h4>
+          <p>Égouttez les pâtes en réservant un peu d’eau de cuisson. Mélangez immédiatement avec la pancetta puis la sauce œufs-fromage <strong>hors du feu</strong>, en ajoutant un peu d’eau de cuisson pour une texture crémeuse.</p>
+        </li>
+        <li>
+          <h4>Servir</h4>
+          <p>Poivrez, ajoutez un peu de fromage et servez aussitôt.</p>
+        </li>
+      </ol>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2025 Recettes • <a class="link" href="#">Mentions légales</a></div>
+</footer>
+</body>
+</html>
